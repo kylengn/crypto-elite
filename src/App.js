@@ -44,8 +44,8 @@ const App = () => {
             level={5}
             style={{ color: "white", textAlign: "center" }}
           >
-            CryptoElite <br />
-            All rights reserved
+            CryptoElite <br /> © {new Date().getFullYear()} - Developed by Kyle
+            Nguyen
           </Typography.Title>
           <Space>
             <Link to="/">Home</Link>
