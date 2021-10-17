@@ -48,25 +48,42 @@ const Navbar = () => {
       {activeMenu && (
         <Menu theme="dark">
           <Menu.Item icon={<HomeOutlined />}>
-            <Link to="/" onClick={() => setActiveMenu(!activeMenu)}>
+            <Link
+              to="/"
+              onClick={() =>
+                setActiveMenu(screenSize < 768 ? !activeMenu : activeMenu)
+              }
+            >
               Home
             </Link>
           </Menu.Item>
           <Menu.Item icon={<FundOutlined />}>
             <Link
               to="/cryptocurrencies"
-              onClick={() => setActiveMenu(!activeMenu)}
+              onClick={() =>
+                setActiveMenu(screenSize < 768 ? !activeMenu : activeMenu)
+              }
             >
               Cryptocurrencies
             </Link>
           </Menu.Item>
           <Menu.Item icon={<MoneyCollectOutlined />}>
-            <Link to="/exchanges" onClick={() => setActiveMenu(!activeMenu)}>
+            <Link
+              to="/exchanges"
+              onClick={() =>
+                setActiveMenu(screenSize < 768 ? !activeMenu : activeMenu)
+              }
+            >
               Exchanges
             </Link>
           </Menu.Item>
           <Menu.Item icon={<BulbOutlined />}>
-            <Link to="/news" onClick={() => setActiveMenu(!activeMenu)}>
+            <Link
+              to="/news"
+              onClick={() =>
+                setActiveMenu(screenSize < 768 ? !activeMenu : activeMenu)
+              }
+            >
               News
             </Link>
           </Menu.Item>
